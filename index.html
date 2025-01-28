@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- css style -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="./images/♡ Anime pfp♡.jpeg" type="image/x-icon" />
+    <title>Game Hangman</title>
+  </head>
+  <body>
+    <div class="game-modal">
+      <div class="content">
+        <img src="images/lost.gif" alt="gif" />
+        <h4>Game Over!</h4>
+        <p>The correct word was: <b>rainbow</b></p>
+        <button class="play-again">Play Again</button>
+      </div>
+    </div>
+    <div class="container">
+      <div class="hangman-box">
+        <img src="images/hangman-0.svg" draggable="false" alt="hangman-img" />
+        <h1>Hangman Game</h1>
+      </div>
+      <div class="game-box">
+        <ul class="word-display"></ul>
+        <h4 class="hint-text">Hint: <b>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur, exercitationem!</b></h4>
+        <h4 class="guesses-text">Incorrect guesses: <b>0 / 6</b></h4>
+        <div class="keyboard"></div>
+      </div>
+    </div>
+    <!-- MAIN JS -->
+    <script src="word-list.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
